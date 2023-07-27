@@ -1,0 +1,93 @@
+#react-bubbly-transitions__bubbles {
+  --size: 300vh;
+}
+
+/*@media only screen and (min-width: 768px) {
+  #react-bubbly-transitions__bubbles {
+    --size: 125vw;
+  }
+}*/
+
+.react-bubbly-transitions__first,
+.react-bubbly-transitions__second {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 0;  /*right*/
+  translate:  -100% -50%; /*100% -50%*/
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  animation-timing-function: ease-in-out;
+}
+
+.react-bubbly-transitions__first_right,
+.react-bubbly-transitions__second_right {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  right: 0;  /*right*/
+  translate:  100% -50%; /*100% -50%*/
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  animation-timing-function: ease-in-out;
+}
+
+.react-bubbly-transitions__first {
+  animation-name: bubble-move;
+}
+
+.react-bubbly-transitions__first_right {
+  animation-name: bubble-move;
+}
+
+.react-bubbly-transitions__second {
+  animation-name: bubble-second-move;
+}
+
+.react-bubbly-transitions__second_right {
+  animation-name: bubble-second-move-right;
+}
+
+@keyframes bubble-move {
+  20% {
+    border-radius: var(--size);
+  }
+  50%,
+  100% {
+    translate: 0 -50%;
+    border-radius: 0;
+  }
+}
+
+@keyframes bubble-second-move {
+  30% {
+    translate: -100% -50%; /*100% -50%*/
+  }
+  50% {
+    border-radius: var(--size);
+  }
+  100% {
+    translate:  0 -50%;
+    border-radius: 0;
+  }
+}
+
+@keyframes bubble-second-move-right {
+  30% {
+    translate: 100% -50%; /*100% -50%*/
+  }
+  50% {
+    border-radius: var(--size);
+  }
+  100% {
+    translate:  0 -50%;
+    border-radius: 0;
+  }
+}
+
+/* bubbly Link */
+.react-bubbly-transitions__bubbly-link {
+  width: 100%;
+}
