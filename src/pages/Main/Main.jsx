@@ -18,7 +18,7 @@ const Main = () => {
 
 			<div className={styles.user_block}>
 				<article className={styles.user}>
-          <img className={styles.avatar} src="./assets/images/avatar.jpg" alt="avatar" />
+          <img className={styles.avatar} src="./assets/images/avatar3.jpg" alt="avatar" />
 					<h2>
             <span className={styles.hoverLetter}>D</span>
             <span className={styles.hoverLetter}>m</span>
