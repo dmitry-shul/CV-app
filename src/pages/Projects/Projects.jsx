@@ -12,7 +12,7 @@ const Projects = () => {
   //console.log(projects)
 
   useEffect(() => {
-    getData().then((response) => setProjects(response.reverse()))
+    getData().then((response) => setProjects(response))
   }, [])
 
   return (
