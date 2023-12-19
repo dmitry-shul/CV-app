@@ -177,7 +177,7 @@
   }
 }
 
-.hoverLetter {
+/*.hoverLetter {
   cursor: pointer;
   transition: 0.2s;
 }
@@ -186,7 +186,7 @@
   padding: 0 6px;
   color: red;
   font-size: 48px;
-}
+}*/
 
 /*about projects-------------------------------------*/
 
