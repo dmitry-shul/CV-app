@@ -41,7 +41,7 @@ const Main = () => {
               <span className={styles.hoverLetter}>i</span>
             </p>
           </h2>
-					<h3>Front-end developer (Beginner)</h3>
+					<h3>Front-end developer</h3>
 				</article>
 			</div>
 
